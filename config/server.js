@@ -4,14 +4,4 @@ module.exports = ({ env }) => ({
   app: {
     keys: env.array("APP_KEYS"),
   },
-  admin: {
-    // ...
-    path: "/admin",
-    build: {
-      backend: env(
-        "ADMIN_BUILD_BACKEND",
-        "https://chiranjeevs-blog-strapi-backend-api.onrender.com"
-      ),
-    },
-  },
 });
